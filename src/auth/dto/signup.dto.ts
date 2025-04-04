@@ -12,10 +12,6 @@ export class SignUpDto {
   @IsString()
   lastName: string;
 
-//   @IsNotEmpty()
-//   @IsString()
-//   @IsEmail({}, { message: 'Please enter correct email' })
-//   confirmEmail: string;
 @ApiProperty({example:"alfred@gmail.com",description:"user email"})
   @IsNotEmpty()
   @IsEmail({}, { message: 'Please enter correct email' })
