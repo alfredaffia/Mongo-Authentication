@@ -17,5 +17,7 @@ SwaggerModule.setup('signup', app, documentFactory);
 
 app.useGlobalPipes(new ValidationPipe());
   await app.listen(process.env.PORT ?? 4000);
+  console.log(`server is running on port ${process.env.PORT ?? 4000}`);
+  // console.log(`Swagger is running on http://localhost:${process.env.PORT ?? 4000}/signup`);
 }
 bootstrap();
